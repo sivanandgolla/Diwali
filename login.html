@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: auto;
+            margin: auto;
+        }
+    </style>
+    <style>
+        .login-container {
+            background-color: antiquewhite;
+            width: 30%;
+            padding: 5%;
+        }
+
+        .form-field input {
+            padding: 20px;
+            width: 80%;
+            margin: 10px 0px;
+        }
+        @media(max-width:430px){
+            .container{
+                flex-direction: column;
+            }
+            .login-container{
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="diwali.html" class="login-container">
+            <h1 class="title"> Login</h1>
+            <div class="form-field">
+                <input type="user name" name="user name" required placeholder="enter your user name" />
+            </div>
+            <div class="form-field">
+                <input type="password" name="password" required placeholder="enter the password" />
+            </div>
+            <button>login</button>
+            <p>
+                if you don't have an account
+                <a href="index.html">signup</a>
+            </p>
+        </form>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmgXErdzxUtSQH5CY8fqbmw-QFfa2pd-LT1g&s" alt="">
+    </div>
+</body>
+
+</html>
